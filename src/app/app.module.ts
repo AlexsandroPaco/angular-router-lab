@@ -8,6 +8,7 @@ import { HelloComponent } from './hello.component';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { RotaComParametroComponent } from './rota-com-parametro/rota-com-parametro.component';
 
 @NgModule({
   imports:      [ 
@@ -19,7 +20,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AppComponent, 
     HelloComponent, 
     FirstComponent, 
-    SecondComponent, PageNotFoundComponent 
+    SecondComponent, PageNotFoundComponent, RotaComParametroComponent 
     ],
   bootstrap:    [ AppComponent ]
 })
