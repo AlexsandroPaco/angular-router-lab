@@ -24,6 +24,6 @@ export class AppComponent {
 
   rotaComParam() {
     //this.router.navigateByUrl("/rota-com-param/?nome=Alex");
-    this.router.navigate(['/rota-com-param', { nome: 'Felipe'}]);
+    /this.router.navigate(['/rota-com-param', { nome: 'Felipe'}]);
   }
 }

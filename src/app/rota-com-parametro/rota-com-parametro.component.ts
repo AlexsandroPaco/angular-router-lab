@@ -19,15 +19,23 @@ export class RotaComParametroComponent implements OnInit {
     // quando o parâmetro é passado usando navigateByUrl
     this.route.queryParams.subscribe(params=> {
       console.log(params)
-      this.nome = params["nome"];
+      //this.nome = params["nome"];
     });
 
     // quando o parâmetro é passado usando navigate
     this.route.paramMap.subscribe( params => {
       console.log(params)
       console.log(params.get('nome'))
-      this.nome = params.get('nome')
+      //this.nome = params.get('nome')
     })
+
+    // Forma mais fácil de pegar os parâmetros
+
+    // passado usando navigateByUrl
+    //this.nome = this.route.snapshot.queryParamMap.get('nome'); 
+
+    // passado usando navigate
+    this.nome = this.route.snapshot.paramMap.get('nome'); 
 
   }
 
