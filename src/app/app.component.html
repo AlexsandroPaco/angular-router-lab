@@ -1,0 +1,15 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<nav>
+  <ul>
+    <li><a routerLink="/first-component" routerLinkActive="active">First Component</a></li>
+    <li><a routerLink="/second-component" routerLinkActive="active">Second Component</a></li>
+  </ul>
+</nav>
+<button style="margin: 10px;" (click)="firt()">First Component</button>
+<button (click)="second()">Second Component</button>
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>
